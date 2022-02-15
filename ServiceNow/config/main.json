@@ -1,0 +1,189 @@
+{
+    "Tables": [
+        {
+            "Name": "incident",
+            "ClassName": "Incident",
+            "Type": "ServiceNow.Incident",
+            "NumberPrefix": "inc",
+            "DescriptionField": "short_description"
+        },
+        {
+            "Name": "change_request",
+            "ClassName": "Change Request",
+            "Type": "ServiceNow.ChangeRequest",
+            "NumberPrefix": "chg",
+            "DescriptionField": "short_description"
+        },
+        {
+            "Name": "cmdb_ci",
+            "ClassName": "Configuration Item",
+            "Type": "ServiceNow.ConfigurationItem",
+            "DescriptionField": "name"
+        },
+        {
+            "Name": "sc_request",
+            "ClassName": "Request",
+            "Type": "ServiceNow.Request",
+            "NumberPrefix": "req",
+            "DescriptionField": "short_description"
+        },
+        {
+            "Name": "sc_req_item",
+            "ClassName": "Requested Item",
+            "Type": "ServiceNow.RequestedItem",
+            "NumberPrefix": "ritm",
+            "DescriptionField": "short_description"
+        },
+        {
+            "Name": "sys_user",
+            "ClassName": "User",
+            "Type": "ServiceNow.UserAndUserGroup",
+            "NumberPrefix": "",
+            "DescriptionField": "name"
+        },
+        {
+            "Name": "sys_user_group",
+            "ClassName": "User Group",
+            "Type": "ServiceNow.UserAndUserGroup",
+            "NumberPrefix": "",
+            "DescriptionField": "name"
+        },
+        {
+            "Name": "sc_task",
+            "ClassName": "Catalog Task",
+            "Type": "ServiceNow.CatalogTask",
+            "NumberPrefix": "sctask",
+            "DescriptionField": "short_description"
+        },
+        {
+            "Name": "change_task",
+            "ClassName": "Change Task",
+            "Type": "ServiceNow.ChangeTask",
+            "NumberPrefix": "ctask",
+            "DescriptionField": "short_description"
+        },
+        {
+            "Name": "cmdb_ci_certificate",
+            "ClassName": "Unique Certificate",
+            "Type": "ServiceNow.UniqueCertificate",
+            "NumberPrefix": "",
+            "DescriptionField": "name"
+        }
+    ],
+    "FilterOperators": [
+        {
+            "Name": "-eq",
+            "QueryOperator": "=",
+            "Description": "is equal to",
+            "NumValues": 1
+        },
+        {
+            "Name": "-ne",
+            "QueryOperator": "!=",
+            "Description": "is not equal to",
+            "NumValues": 1
+        },
+        {
+            "Name": "=''",
+            "QueryOperator": "ISEMPTY",
+            "Description": "field has no value",
+            "NumValues": 0
+        },
+        {
+            "Name": "=\"\"",
+            "QueryOperator": "ISEMPTY",
+            "Description": "field has no value",
+            "NumValues": 0
+        },
+        {
+            "Name": "!=''",
+            "QueryOperator": "ISNOTEMPTY",
+            "Description": "field has any value",
+            "NumValues": 0
+        },
+        {
+            "Name": "!=\"\"",
+            "QueryOperator": "ISNOTEMPTY",
+            "Description": "field has any value",
+            "NumValues": 0
+        },
+        {
+            "Name": "-like",
+            "QueryOperator": "LIKE",
+            "Description": "value is found anywhere in field",
+            "NumValues": 1
+        },
+        {
+            "Name": "-notlike",
+            "QueryOperator": "NOT LIKE",
+            "Description": "value is not found anywhere in field",
+            "NumValues": 1
+        },
+        {
+            "Name": "-in",
+            "QueryOperator": "IN",
+            "Description": "field is populated by one of the values",
+            "NumValues": 1
+        },
+        {
+            "Name": "-notin",
+            "QueryOperator": "NOT IN",
+            "Description": "field is populated by any value except for these",
+            "NumValues": 1
+        },
+        {
+            "Name": "-lt",
+            "QueryOperator": "<",
+            "Description": "field is less than the value.  can be used with dates to represent prior to the value.",
+            "NumValues": 1
+        },
+        {
+            "Name": "-le",
+            "QueryOperator": "<=",
+            "Description": "field is less than or equal to the value.  can be used with dates to represent prior to or the day of the value.",
+            "NumValues": 1
+        },
+        {
+            "Name": "-gt",
+            "QueryOperator": ">",
+            "Description": "field is greater than the value.  can be used with dates to represent after the value.",
+            "NumValues": 1
+        },
+        {
+            "Name": "-ge",
+            "QueryOperator": ">=",
+            "Description": "field is greater than or equal to the value.  can be used with dates to represent after or the day of the value.",
+            "NumValues": 1
+        },
+        {
+            "Name": ".startswith",
+            "QueryOperator": "STARTSWITH",
+            "Description": "field starts with the value",
+            "NumValues": 1
+        },
+        {
+            "Name": "-startswith",
+            "QueryOperator": "STARTSWITH",
+            "Description": "field starts with the value",
+            "NumValues": 1
+        },
+        {
+            "Name": ".endswith",
+            "QueryOperator": "ENDSWITH",
+            "Description": "field ends with the value",
+            "NumValues": 1
+        },
+        {
+            "Name": "-endswith",
+            "QueryOperator": "%",
+            "Description": "field ends with the value",
+            "NumValues": 1
+        },
+        {
+            "Name": "-between",
+            "QueryOperator": "BETWEEN",
+            "Description": "value is between 2 dates or integers",
+            "NumValues": 2
+        }
+    ]
+}
